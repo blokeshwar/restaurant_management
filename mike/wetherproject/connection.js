@@ -23,7 +23,11 @@ const connection = mysql.createConnection({
    host: 'aws.connect.psdb.cloud',
    user: 'gxog12v7e7mcr28u9vnr',
    password: 'pscale_pw_igTPjXLmeFQy7rRE2knv1WQ5msMjytxGutyfinHf5uN',
-   database: 'user_details'
+   database: 'user_details',
+   ssl_mode = "VERIFY_IDENTITY",
+   ssl      = {
+    "ca": "/etc/ssl/certs/ca-certificates.crt"
+  }
 });
 
 connection.connect((err) => {
