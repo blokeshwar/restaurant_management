@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking History</title>
+</head>
+<body>
+<h1>Booking History for {{ userEmail }}</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Type</th>
+        <th>Start Date/Time</th>
+        <th>End Date/Time</th>
+        <th>Location</th>
+        <th>Mobile</th>
+        <th>Persons/Rooms</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <% bookings.forEach(function(booking) { %>
+        <% if (booking.fname1) { %>
+            <h2>User1 Booking</h2>
+            <p>Type: User1</p>
+            <p>Start Date: <%= booking.date_in %></p>
+            <p>End Date: <%= booking.date_out %></p>
+            <p>Location: <%= booking.location1 %></p>
+            <p>Mobile: <%= booking.mobile1 %></p>
+            <p>Rooms: <%= booking.Rooms %></p>
+        <% } else if (booking.fname) { %>
+            <h2>Meeting Booking</h2>
+            <p>Type: Meeting</p>
+            <p>Start Time: <%= booking.start_time %></p>
+            <p>End Time: <%= booking.end_time %></p>
+            <p>Location: <%= booking.location2 %></p>
+            <p>Mobile: <%= booking.mobile2 %></p>
+            <p>Person: <%= booking.person %></p>
+        <% } else { %>
+            <h2>Wedding Booking</h2>
+            <p>Type: Wedding</p>
+            <p>Start Date: <%= booking.start_date %></p>
+            <p>End Date: <%= booking.end_date %></p>
+            <p>Location: <%= booking.location2 %></p>
+            <p>Mobile: <%= booking.mobile2 %></p>
+            <p>Persons: <%= booking.persons %></p>
+        <% } %>
+    <% }); %>
+
+    </tbody>
+</table>
+</body>
+</html>

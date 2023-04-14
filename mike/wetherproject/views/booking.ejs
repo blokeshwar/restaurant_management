@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-top: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 1em;
+        }
+
+        th, td {
+            padding: 0.5em;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        @media only screen and (max-width: 600px) {
+            table, th, td {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>Booking History for <%= userEmail %></h1>
+<table>
+    <thead>
+    <tr>
+        <th>Type</th>
+        <% if (user1Bookings.length > 0) { %>
+            <th>NAME  </th>
+            <th>Start Date/Time</th>
+            <th>End Date/Time</th>
+            <th>Location</th>
+            <th>Mobile</th>
+            <th>Rooms/persons</th>
+        <% } else if (meetingBookings.length > 0) { %>
+            <th>NAME  </th>
+            <th>Start Time/Start Date</th>
+            <th>End Time/End Date</th>
+            <th>Location</th>
+            <th>Mobile</th>
+            <th>Person</th>
+        <% } else { %>
+            <th>NAME  </th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Location</th>
+            <th>Mobile</th>
+            <th>Persons</th>
+        <% } %>
+    </tr>
+    </thead>
+    <tbody>
+    <% if (user1Bookings.length > 0) { %>
+        <% user1Bookings.forEach(function(booking) { %>
+            <tr>
+                <td>Dining Booking</td>
+                <td><%= booking.fname%></td>
+                <td><%= booking.date_in %></td>
+                <td><%= booking.date_out %></td>
+                <td><%= booking.location %></td>
+                <td><%= booking.mobile %></td>
+                <td><%= booking.Rooms %></td>
+            </tr>
+        <% }); %>
+    <% } %>
+
+    <% if (meetingBookings.length > 0) { %>
+        <% meetingBookings.forEach(function(booking) { %>
+            <tr>
+                <td>Meeting Booking</td>
+                <td><%= booking.fname %></td>
+                <td><%= booking.start_time %></td>
+                <td><%= booking.end_time %></td>
+                <td><%= booking.location %></td>
+                <td><%= booking.mobile %></td>
+                <td><%= booking.person %></td>
+            </tr>
+        <% }); %>
+    <% } %>
+
+    <% if (weddingBookings.length > 0) { %>
+        <% weddingBookings.forEach(function(booking) { %>
+            <tr>
+                <td>Wedding Booking</td>
+                <td><%= booking.fname %></td>
+                <td><%= booking.start_date %></td>
+                <td><%= booking.end_date %></td>
+                <td><%= booking.location %></td>
+                <td><%= booking.mobile %></td>
+                <td><%= booking.persons %></td>
+            </tr>
+        <% }); %>
+    <% } %>
+
+    <% if (user1Bookings.length === 0 && meetingBookings.length === 0 && weddingBookings.length === 0) { %>
+        <tr>
+            <td colspan="6">No bookings found.</td>
+        </tr>
+    <% } %>
+    </tbody>
+</table>
+</body>
+</html>

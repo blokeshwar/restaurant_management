@@ -1,0 +1,515 @@
+body{
+  overflow-x: hidden;
+ 
+}
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  height: 80px;
+}
+.topnav img{
+  width: 20%;
+}
+.photo:hover{
+  background-color: #333;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 40px;
+}
+.topnav a :hover{
+  color: gray;
+  text-decoration: none;
+}
+
+.home a{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  margin-right: 40px;
+  padding-bottom: 20px;
+}
+.home a:hover{
+  color: gray;
+  text-decoration: none;
+}
+.dining a{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  margin-right: 50px;
+  text-decoration: none;
+}
+.dining a:hover{
+  color: gray;
+  text-decoration: none;
+}
+.wedding a{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  margin-right: 40px;
+}
+.wedding a:hover{
+  color: gray;
+  text-decoration: none;
+}
+.booking a{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  margin-right: 40px;
+}
+.booking a:hover{
+  color: gray;
+  text-decoration: none;
+}
+.features{
+  display: block;
+}
+.features ul li{
+  letter-spacing: 3px;
+  
+}
+.stay{
+  object-position: right;
+}
+.stay button{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  background-color: lawngreen;
+  color: black;
+  object-position: right;
+  margin-left: 355px;
+  transition-duration: 0.4s;
+  border-radius: 10px;
+}
+.stay button:hover {
+  background-color: skyblue;
+  color: white;
+}
+.message {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+          -225deg,
+          #eedd44 0%,
+          #2aa15f 29%,
+          #ff1361 67%,
+          #2691d9 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 30px;
+  transform: translate(650px,-55px);
+
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.card-group{
+  margin-top: 100px;
+}
+.destinations{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+            font-size: 130px;
+            text-shadow: -1px 1px 0 #ffffff,
+                          1px 1px 0 #ffffff,
+                         1px -1px 0 #ffffff,
+                        -1px -1px 0 #ffffff;
+}
+.city1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 70px;
+    background: linear-gradient(
+    to right, #f32170, #ff6b08,
+     #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.city2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 70px;
+    background: linear-gradient(
+    to right, #f32170, #562f15,
+     #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.city3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 70px;
+    background: linear-gradient(
+    to right, #f32170, #ff6b08,
+     #857785, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.city3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 70px;
+    background: linear-gradient(
+    to right, #f32170,
+     #857785, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.city4{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 70px;
+    background: linear-gradient(
+    to right, #f32170, #ff6b08,
+     #857785, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.city5{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 70px;
+    background: linear-gradient(
+    to right,  #ff6b08,
+     #857785, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.city6{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 70px;
+    background: linear-gradient(
+    to right, #f32170, #ff6b08,
+     #857785);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.row1{
+  height: 5rem;
+  width: 50rem;
+}
+.row2{
+  height: 5rem;
+  width: 50rem;
+}
+.row3{
+  height: 5rem;
+  width: 50rem;
+}
+.row4{
+  height: 5rem;
+  width: 50rem;
+  margin-top: 150px;
+}
+.row5{
+  height: 5rem;
+  width: 50rem;
+  margin-top: 150px;
+}
+.row6{
+  height: 5rem;
+  width: 50rem;
+  margin-top: 150px;
+}
+.ancillary{
+  margin-top: 300px;
+  margin-bottom: 10px;
+  margin-left: 200px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+            font-size: 80px;
+            text-shadow: -1px 1px 0 #ffffff,
+                          1px 1px 0 #ffffff,
+                         1px -1px 0 #ffffff,
+                        -1px -1px 0 #ffffff;
+}
+.row7{
+  height: 5rem;
+  width: 44.2rem;
+}
+
+.wedding1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: 70px;
+  background: linear-gradient(
+    to right,#ff6b08, #f32170, #562f15,
+     #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.row8{
+  height: 5rem;
+  width: 44.2rem;
+  transform: translateX(50px);
+  margin-right: 30px;
+}
+.spa{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: 70px;
+  background: linear-gradient(
+    to right,#ff6b08, #f32170, 
+     #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.row9{
+  height: 9rem;
+  width: 50rem;
+  transform: translateX(70px);
+}
+.pool{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: 70px;
+  background: linear-gradient(
+    to right,#ff6b08, #f32170, 
+     #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.row10{
+  height: 9rem;
+  width: 45rem;
+  transform: translateY(250px);
+}
+.meeting{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: 70px;
+  background: linear-gradient(
+    to right,#ff6b08, #562f15,
+      #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.row11{
+  height: 9rem;
+  width: 50rem;
+  transform: translate(40px,250px);
+}
+.beach{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: 70px;
+  background: linear-gradient(
+    to right, #562f15,
+    #f32170,#ff6b08);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.row12{
+  height: 9rem;
+  width: 50rem;
+ transform: translate(60px,250px);
+}
+.casino{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: 70px;
+  background: linear-gradient(
+    to right, #562f15,
+    #f32170,#ff6b08);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.explore{
+ margin-top: 650px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+            font-size: 80px;
+            text-shadow: -1px 1px 0 #ffffff,
+                          1px 1px 0 #ffffff,
+                         1px -1px 0 #ffffff,
+                        -1px -1px 0 #ffffff;
+}
+.paragraph{
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+  color: #a68c8c;
+  font-size: 15px;
+  width: 900px;
+}
+.back{
+ margin-right: 30px;
+ margin-left: 50px;
+  height:580px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.p1{
+  transform: translateX(300px);
+}
+.p2{
+  transform: translateX(550px);
+}
+.column1 img{
+  transform: translateX(20px);
+}
+.retreat{
+  transform: translate(380px,-250px);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  color: aqua;
+}
+.column2 p{
+  width: 250px;
+  font-size: 13px;
+  transform: translate(380px,-220px);
+  color: aliceblue;
+}
+.column3 img{
+  transform: translate(655px,-455px);
+}
+.hill{
+  transform: translate(1050px,-700px);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  color: aqua;
+}
+.column4 p{
+  width: 250px;
+  font-size: 13px;
+  transform: translate(1050px,-670px);
+  color: aliceblue;
+}
+.royal{
+  transform: translate(30px,-540px);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  color: aqua;
+}
+.column5 p{
+  width: 250px;
+  font-size: 13px;
+  transform: translate(30px,-500px);
+  color: aliceblue;
+}
+.column6{
+  transform: translate(337px,-730px);
+}
+.column8{
+  transform: translate(970px,-1185px);
+}
+.column8 img{
+  width: 316px;
+  height: 276px;
+}
+.urban{
+  transform: translate(670px,-970px);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  color: aqua;
+}.column7 p{
+  width: 250px;
+  font-size: 13px;
+  transform: translate(680px,-930px);
+  color: aliceblue;
+}
+footer{
+  background-color: black;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  bottom: 0;
+  height: auto;
+}
+/*content*/
+.footer{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+overflow-y: hidden;
+
+}
+.footer p{
+  line-height: 20px;
+  font-size: 14px;
+}
+/*social -media*/
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: red;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 100px;
+  padding-bottom: 0;
+}
+.socials a i{
+  transform: translateX(-1px);
+  text-align: center;
+  font-size: 25px;
+  margin-right: 10px;
+  width: 20px;
+  transition: color .4s ease;
+  word-spacing: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.socials a:hover i{
+  color: rgb(28, 244, 255);
+}
+/* copyright*/
+.footer-copyright{
+  background-color: black;
+  margin-top: -10px;
+  width: 100%;
+  
+  margin-left: -20px;
+  
+}
+.footer-copyright p{
+  padding-top: 0;
+  text-align: center;
+  font-size: 25px;
+  word-spacing: 2px;
+  align-items: center;
+  color: red;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transform: translate(40px,10px);
+  margin-bottom: 20px;
+}
+.connect{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  background: linear-gradient(
+    to right,#eedd44,#f32170, #ee6e19,
+    #f32170);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transform: translateX(600px);
+    margin-bottom: 30px;
+}

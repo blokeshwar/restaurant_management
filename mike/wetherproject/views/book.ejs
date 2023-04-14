@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="css/bookstyle.css">
+</head>
+<body>
+<div class="main">
+    <div class="register">
+        <h2>Booking Details</h2>
+        <form action="/booking"  id="register" method="post">
+            <label>Name : </label>
+            <br>
+            <input type="text" name="fname" id="name" placeholder="Enter your name">
+            <br><br>
+            <label>Date-in : </label>
+            <br>
+            <input type="date" name="date_in" id="name" placeholder="dd/mm/yyyy">
+            <br><br>
+            <label>Date-out : </label>
+            <br>
+            <input type="date" name="date_out" id="name" placeholder="dd/mm/yyyy">
+            <br><br>
+
+            <label>No.of rooms : </label>
+            <br>
+            <input type="number" name="Rooms" id="name" placeholder="Number of rooms (2-3 per room)">
+            <br><br>
+            <label>Email : </label>
+            <br>
+            <input type="email" name="email" id="name" placeholder="Enter your email id">
+            <br><br>
+            <label>Mobile number : </label>
+            <br>
+            <input type="number" name="mobile" id="name" placeholder="Enter your mobile number">
+            <br><br>
+            <p class="select">Choose a Location :</p>
+             <input type="radio" id="html" name="location" value="Mumbai">
+            <label class="lang1">Mumbai</label>
+            <br>
+            <input type="radio" id="html" name="location" value="Goa">
+            <label class="lang1">Goa</label>
+            <br>
+            <input type="radio" id="html" name="location" value="Cochin">
+            <label class="lang1">Cochin</label>
+            <br>
+            <input type="radio" id="html" name="location" value="Maldives">
+            <label class="lang1">Maldives</label>
+            <br>
+            <input type="radio" id="html" name="location" value="Kolkata">
+            <label class="lang1">Kolkata</label>
+            <br>
+            <input type="radio" id="html" name="location" value="Delhi">
+            <label class="lang1">Delhi</label>
+            <br><br>
+            <input type="submit" value="Book"  id="submit">
+        </form>
+    </div>
+</div>
+</body>

@@ -1,0 +1,145 @@
+body{
+    overflow-x: hidden;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+
+#row1{
+    color:white;
+    margin-top: 100px;
+    font-size: 50px;
+}
+.row2{
+
+   margin-top: 40px;
+    color:white;
+    font-size: 20px;
+}
+.row3{
+    margin: 25px 25px 25px 25px;
+    padding: 25px 25px 75px 100px;
+
+}
+.row4{
+    color: white;
+    margin: 20px;
+}
+#row5{
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+}
+.row6{
+    color: white;
+    margin: 50px;
+    font-size: 20px;
+}
+.mb-3{
+    color:white;
+    width:97%;
+    margin:20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#row7{
+    color: white;
+    margin: 20px;
+    
+}
+.row9{
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+}
+.proposal {
+    width: 50rem;
+    height: 50rem;
+}
+.carousel-item{
+    margin: 100px;
+    height: 300%;
+}
+.row8{
+    height: 60%;
+    width:100%;
+}
+.card-text
+{
+    font-size: 15px;
+}
+.column{
+    width:50%;
+    float:left;
+}
+.row10{
+    margin-top:50px;
+    font-size: 20px;
+    color: white;
+}
+.row11{
+margin-top:50px;
+}
+.card-deck{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.desk{
+    margin-top: 50px;
+}
+.card-img-top{
+    height:80%;
+    width:100%;
+
+}
+.h-100{
+    height:60%;
+    width:100%;
+}
+#re{
+    color: white;
+}
+.form-area{
+    margin-bottom: 30px;
+}
+.desk2{
+    margin-bottom: 20px;
+}
+.rep{
+    margin-bottom: 30px;
+    color: white;
+    font-size: 20px;
+}
+.r4{
+   height: 400px;
+}
+.col{
+    height: 500px;
+}
+.form1{
+    font-size: 20px;
+}
